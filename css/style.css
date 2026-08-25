@@ -15,9 +15,9 @@
 }
 
 body {
-    background-color: var(--color-bg);
+    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 40%, var(--color-bg) 100%);
     color: var(--color-text);
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Nunito Sans', Arial, sans-serif;
 }
 
 .navbar {
@@ -65,4 +65,66 @@ body {
     padding: 60px 40px;
     flex-wrap: wrap;
     gap: 40px;
+}
+
+.about {
+    padding: 80px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-accent-light);
+}
+
+.about p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+body {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.experience {
+    padding: 80px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--color-accent-light);
+}
+
+.experience-item {
+    margin-bottom: 24px;
+    padding-left: 20px;
+    border-left: 3px solid var(--color-accent);
+}
+
+.experience-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.experience-meta {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.experience-other {
+    margin-top: 30px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
