@@ -59,6 +59,7 @@ body {
 }
 
 .hero {
+    min-height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,26 +68,41 @@ body {
     gap: 40px;
 }
 
+
 .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
     padding: 80px 40px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.about h2 {
+.about-text {
+    flex: 2;
+}
+
+.about-quote {
+    flex: 1;
+    padding: 30px;
+    border-left: 3px solid var(--color-accent);
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+}
+
+.about-text h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: var(--color-accent-light);
 }
 
-.about p {
+.about-text p {
     margin-bottom: 16px;
     line-height: 1.7;
     color: var(--color-text-muted);
-}
-
-body {
-    font-family: 'Nunito Sans', Arial, sans-serif;
 }
 
 h1, h2, h3 {
@@ -124,6 +140,50 @@ h1, h2, h3 {
 
 .experience-other {
     margin-top: 30px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.projects {
+    padding: 80px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--color-accent-light);
+}
+
+.project-category {
+    font-size: 1.3rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+.project-card p {
     color: var(--color-text-muted);
     font-size: 0.9rem;
     line-height: 1.6;
