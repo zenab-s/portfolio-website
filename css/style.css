@@ -253,3 +253,30 @@ h1, h2, h3 {
     font-size: 1.2rem;
     margin-bottom: 4px;
 }
+
+.contact {
+    padding: 80px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--color-accent-light);
+}
+
+.contact-links {
+    display: flex;
+    gap: 30px;
+}
+
+.contact-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact-links a:hover {
+    color: var(--color-accent);
+}
