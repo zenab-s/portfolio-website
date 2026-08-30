@@ -44,10 +44,13 @@ body {
     color: var(--color-text);
     text-decoration: none;
     font-size: 0.95rem;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .nav-links a:hover {
     color: var(--color-accent);
+    transform: scale(1.2);
 }
 
 .hero img {
