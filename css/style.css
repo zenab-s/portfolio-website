@@ -324,3 +324,13 @@ h1, h2, h3 {
         gap: 20px;
     }
 }
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+.nav-links a.active {
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
